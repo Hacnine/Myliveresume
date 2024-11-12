@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,6 +16,8 @@ module.exports = {
       },
       
       fontFamily: {
+        sans: ['Helvetica', ...fontFamily.sans], // Set Helvetica as the default sans-serif
+        helvetica: ['Helvetica', 'Arial', 'sans-serif'], // Define a separate class for Helvetica
         roboto: ["Roboto Condensed", "serif"],
         glyphic: ["Faculty Glyphic", "sans-serif"],
         teko: ["Teko", "sans-serif"]
@@ -21,7 +25,7 @@ module.exports = {
       },
       colors: {
         
-        "customred": "#BD1F17",
+        "customgray": "#252526",
         "ligherpink": "#faf7f2"
       
         

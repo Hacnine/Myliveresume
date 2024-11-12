@@ -15,8 +15,17 @@ const poppins = localFont({
 
 export const metadata = {
   title: "My Live Resume",
-  description: "",
+  description: 'Your website description',
+  icons: {
+    icon: {
+      href: '/icon.svg',
+      type: 'image/png',
+      sizes: '32x32',
+    },
+  },
 };
+
+
 
 export default function RootLayout({ children }) {
   return (
