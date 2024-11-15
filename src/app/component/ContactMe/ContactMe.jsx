@@ -6,7 +6,7 @@ import { contactMethods } from '@/app/contant';
 
 const ContactMe = () => {
     return (
-        <div className="p-8 bg-[#1e2026] wrapper text-white center flex-col  max-w-md mx-auto">
+        <div className="p-8 bg-slate-900 wrapper text-white center flex-col   contianer mx-auto">
             <h2 className="text-2xl font-bold mb-4">Ways To Contact Me</h2>
             <p className="mb-6">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             <div className="flex flex-col items-center">
@@ -20,7 +20,7 @@ const ContactMe = () => {
                             className="flex items-center mx-4 my-2 bg-[#282b33]  px-6 py-5 text-yellow-500"
                         >
                             <span className="mr-2 text-white text-xl">{method.icon}</span>
-                            <span className="font-medium text-base">{method.type}:</span> <span className="ml-1 text-base">{method.value}</span>
+                            <span className="font-medium text-base">{method.type}</span> <span className="ml-1 text-base">{method.value}</span>
                         </motion.div>
                     ))}
                 </div>
@@ -34,7 +34,7 @@ const ContactMe = () => {
                             className="flex items-center mx-4 my-2 bg-[#282b33]  px-6 py-5 text-yellow-500"
                         >
                             <span className="mr-2 text-white text-xl">{method.icon}</span>
-                            <span className="font-medium text-base">{method.type}:</span> <span className="ml-1 text-base">{method.value}</span>
+                            <span className="font-medium text-base">{method.type}</span> <span className="ml-1 text-base">{method.value}</span>
                         </motion.div>
                     ))}
                 </div>

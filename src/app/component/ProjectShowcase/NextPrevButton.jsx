@@ -14,16 +14,16 @@ const NextPrevButton = ({ sliderRef }) => {
   return (
     <>
       <button
-        className="slider-arrow bg-white shadow-md shadow-gray-300 hover:bg-red-700 text-black hover:text-white rounded-full w-10 h-10 flex items-center justify-center"
+        className="slider-arrow bg-white shadow-md shadow-gray-300 hover:bg-red-700 text-black hover:text-white rounded-full px-5 flex items-center justify-center font-extrabold text-2xl "
         onClick={handlePrevious}
       >
-        &#10094;
+       &#8592;
       </button>
       <button
-        className="slider-arrow bg-white shadow-md shadow-gray-300 hover:bg-red-700 text-customred hover:text-white rounded-full w-10 h-10 flex items-center justify-center"
+        className="slider-arrow bg-white shadow-md shadow-gray-300 hover:bg-red-700 text-customred hover:text-white rounded-full px-5 flex items-center justify-center font-extrabold text-2xl "
         onClick={handleNext}
       >
-        &#10095;
+        &#8594;
       </button>
     </>
   );

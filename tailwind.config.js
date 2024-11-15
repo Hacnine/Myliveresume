@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-bg':  "url('/src/assets/images/background/bg2.svg')",
+        'hero-bg':  "url('/bg/hero.png')",
         
      
       },
@@ -26,17 +26,14 @@ module.exports = {
       colors: {
         
         "customgray": "#252526",
-        "ligherpink": "#faf7f2"
-      
-        
+        "yellow-500": "#5f8bd6",
+        "gray-800":"#1e2026",
+        "slate-900":"#1a1d26"
         
       },
       screens: {
-        "sc-390": "390px",
-        "sc-414": "410px",
-        "sc-430": "430px",
-        "max-sm": "778px",
-        "min-sm": "500px"
+        "sc-456": "456px",
+        
      
       },
     },

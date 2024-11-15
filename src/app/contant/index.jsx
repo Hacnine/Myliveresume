@@ -10,14 +10,22 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { BsGithub } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 
+import React from 'react';
+import { LiaReact } from 'react-icons/lia';
+import { SiNextdotjs, SiTailwindcss, SiMui, SiDjango } from 'react-icons/si';
+import { TbBrandFramerMotion } from 'react-icons/tb';
+import { IoLogoJavascript } from 'react-icons/io';
+import { FaSass, FaPython } from 'react-icons/fa';
+import { IoLogoHtml5 } from "react-icons/io";
+import { SiRedux } from "react-icons/si";
 
 export const contactMethods = [
-  { type: 'Email', value: 'hacninetusar@gmail.com', icon: <MdEmail /> },
-  { type: 'Phone', value: '+8801403041607', icon: <IoCallSharp /> },
-  { type: 'Skype', value: 'live:hacninetusar_1', icon: <FaSkype /> },
-  { type: 'Whatsapp', value: 'https://wa.me/01403041607', icon: <IoLogoWhatsapp /> },
-  { type: 'Github', value: 'Github.com/Hacnine', icon: <BsGithub /> },
-  { type: 'Linkedin', value: 'Linkedin.com/in/hacnine/', icon: <FaLinkedin /> },
+  { type: '', value: 'hacninetusar@gmail.com', icon: <MdEmail /> },
+  { type: '', value: '+8801403041607', icon: <IoCallSharp /> },
+  { type: '', value: 'live:hacninetusar_1', icon: <FaSkype /> },
+  { type: '', value: 'https://wa.me/01403041607', icon: <IoLogoWhatsapp /> },
+  { type: '', value: 'Github.com/Hacnine', icon: <BsGithub /> },
+  { type: '', value: 'Linkedin.com/in/hacnine/', icon: <FaLinkedin /> },
 ];
 
 export const stats = [
@@ -33,6 +41,25 @@ export const services = [
   { title: 'Web Research', projects: 450, Icon: <IoSearchOutline /> },
   { title: 'Marketing', projects: 331, Icon: <LuBarChart /> },
 ];
+
+
+
+
+export const skills = [
+    { name: 'React', icon: <LiaReact /> },
+    { name: 'Next.js', icon: <SiNextdotjs /> },
+    { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
+    { name: 'Framer Motion', icon: <TbBrandFramerMotion /> },
+    { name: 'JavaScript', icon: <IoLogoJavascript /> },
+    { name: 'HTML & CSS', icon: <IoLogoHtml5/> },
+    { name: 'MUI', icon: <SiMui /> },
+    { name: 'Sass', icon: <FaSass /> },
+    { name: 'Redux', icon: <SiRedux /> },
+
+    { name: 'Django', icon: <SiDjango /> },
+    { name: 'Python', icon: <FaPython /> },
+];
+
 
 
 export const projects = [

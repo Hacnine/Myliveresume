@@ -10,14 +10,14 @@ const StatCard = ({ value, label }) => {
     const [count, setCount] = React.useState(0);
   
     React.useEffect(() => {
-      if (inView) {
+      if (inView && typeof value === 'number') {  // Add typeof check
         controls.start('visible');
         let start = 0;
         const end = value;
         if (start === end) return;
-  
+    
         let incrementTime = (2 / (end - start)) * 1000;
-  
+    
         let timer = setInterval(() => {
           start += 1;
           setCount(start);
@@ -25,6 +25,7 @@ const StatCard = ({ value, label }) => {
         }, incrementTime);
       }
     }, [controls, inView, value]);
+    
   
     return (
       <motion.div
@@ -36,7 +37,7 @@ const StatCard = ({ value, label }) => {
           visible: { opacity: 1, y: 0 },
         }}
         transition={{ duration: 0.5 }}
-        className="text-center w-48  "
+        className="text-center md:w-48 w-36  "
       >
         <h3 className="text-2xl font-semibold  text-yellow-500">{count} +</h3>
         <p className="text-gray-400">{label}</p>
