@@ -1,7 +1,6 @@
 
 import React from 'react'
 import { motion } from 'framer-motion';
-import Link from "next/link";
 
 const Description = () => {
     return (
@@ -24,15 +23,15 @@ const Description = () => {
                     </motion.div>
                 </a>
 
-                <Link href={''}>
+                <a href={''}>
                     <motion.div
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         className="cursor-pointer"
                     >
-                        <img src="/icon/preview.svg" alt="Preview Link" className=" size-10" />
+                        <img src="/icon/preview.svg" alt="Preview a" className=" size-10" />
                     </motion.div>
-                </Link>
+                </a>
             </div>
         </div>
     )

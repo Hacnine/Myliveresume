@@ -1,8 +1,7 @@
-"use client";
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { skills } from '@/app/contant';
+import { skills } from '../../constant/index';
 
 const tabs = [
     { id: 1, label: 'Experience' },

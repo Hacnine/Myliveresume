@@ -1,8 +1,7 @@
-"use client"
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { projects } from '@/app/contant';
+import { projects } from '../../constant/index';
 import PortfolioModal from './PortfolioModal';
 
 const Portfolio = () => {

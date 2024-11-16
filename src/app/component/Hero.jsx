@@ -1,7 +1,5 @@
-"use client";
 import { motion } from 'framer-motion';
 import { FaDownload } from "react-icons/fa6";
-import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -27,14 +25,14 @@ export default function Home() {
         <p className="text-yellow-500  font-roboto">
           <a href="https://github.com/hacnine">Github</a> | <a href='https://www.linkedin.com/in/hacnine/'>LinkedIn</a>
         </p>
-        <a href="https://drive.google.com/file/d/1-s4V3DwRW0c4J2PFn4sBVBIj3O1WuVfn/view?usp=sharing" className="mt-4 px-6 py-3 border-2 border-yellow-500 hover:text-white text-xs font-semibold text-yellow-500  uppercase font-helvetica  between  gap-3 hover:bg-yellow-500 transition duration-300"> Download My CV <FaDownload className=' text-lg' /></a>
+        <a href="https://drive.google.com/file/d/1-s4V3DwRW0c4J2PFn4sBVBIj3O1WuVfn/view?usp=sharing" className="mt-4 px-6 py-3 border-2 border-yellow-500 hover:text-white text-xs font-semibold text-yellow-500  uppercase font-helvetica  between  gap-3 hover:bg-yellow-500 transition duration-300 rounded-md"> Download My CV <FaDownload className=' text-lg' /></a>
 
 
-        <button className="mt-4 px-6 py-3 border-2 border-yellow-500 hover:text-white text-xs font-semibold text-yellow-500  uppercase font-helvetica hover:bg-yellow-500 transition duration-300">
+        <button className="mt-4 px-6 py-3 border-2 border-yellow-500 hover:text-white text-xs font-semibold text-yellow-500  uppercase font-helvetica rounded-md hover:bg-yellow-500 transition duration-300">
           Contact Me
         </button>
       </motion.div>
-      <Image width={500} height={250} src="/images/profile.svg" className=' w-[500px]' alt="" />
+      <img src="/images/profile.svg" className=' w-[500px]' alt="" />
       {/* Right Section */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}

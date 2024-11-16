@@ -1,14 +1,12 @@
 {
   "name": "myliveresume",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "start": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "framer-motion": "^11.11.11",
@@ -21,13 +19,10 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.3",
     "autoprefixer": "^10.4.20",
-    "eslint": "^9.13.0",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.15",
-    "vite": "^5.4.10"
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
   }
 }

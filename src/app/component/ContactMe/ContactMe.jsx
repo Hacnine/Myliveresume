@@ -1,8 +1,7 @@
-"use client";
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { contactMethods } from '@/app/contant';
+import { contactMethods } from '../../constant/index';
 
 const ContactMe = () => {
     return (
