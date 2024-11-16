@@ -64,11 +64,11 @@ const Hero = forwardRef(({ scrollToRef }, ref) => {
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
-        className="flex mt-7 flex-col items-start space-y-4 md:w-1/2 md:hidden "
+        className="w-full space-y-4 mt-10 md:hidden "
       >
-        <h1 className="text-[55px] font-bold font-poppins leading-tight">
+        <h1 className="text-5xl font-bold font-poppins leading-tight text-yellow-500">
           Hasnain
-          <span className="block -mt-3">
+          <span className="block text-white">
             Tushar<span className="text-yellow-500">.</span>
           </span>
           <div className="w-6 ml-2.5 bg-yellow-500 h-0.5"></div>
@@ -95,7 +95,7 @@ const Hero = forwardRef(({ scrollToRef }, ref) => {
         </p>
         <a
           href="https://drive.google.com/file/d/1-s4V3DwRW0c4J2PFn4sBVBIj3O1WuVfn/view?usp=sharing"
-          className="mt-4 px-6 py-3 border-2 border-yellow-500 hover:text-white text-xs font-semibold text-yellow-500 uppercase font-helvetica flex items-center gap-3 hover:bg-yellow-500 transition duration-300 rounded-md"
+          className="mt-4 px-6 py-3 border-2 border-yellow-500 hover:text-white text-xs font-semibold text-yellow-500 uppercase font-helvetica flex items-center gap-3 hover:bg-yellow-500 transition duration-300 rounded-md w-fit"
         >
           Download My CV <FaDownload className="text-lg" />
         </a>

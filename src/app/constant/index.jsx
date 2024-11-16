@@ -117,7 +117,7 @@ export const projectDetails = [
   {
       title: "Swift Cart",
       description: "This responsive e-commerce project features a clean, pixel-perfect design. It fetches product details like price and stock from a RESTful API. Users can easily manage their cart—add, remove, or adjust quantities. Check out the live preview!",
-      technogies: ["React.js", "Vite", "React Router"],
+      technogies: ["React.js", "Vite", "React Router", "Restful API"],
       github: 'https://github.com/Hacnine/Swiftcart',
       livepreview: 'https://swiftcarts.netlify.app',
       images: [
@@ -130,7 +130,7 @@ export const projectDetails = [
   {
       title: "Car Hive",
       description: "It is a responsive frontend car rental project with a pixel-perfect design. Users can browse cars, view detailed features and rental prices, and manage their rental list by adding or removing cars. Visit the live preview link for more details.",
-      technogies: ["React.js", "Vite", "React Router"],
+      technogies: ["React.js", "Vite", "React Router", "React Slick"],
       github: ' https://github.com/Hacnine/CarHive',
       livepreview: 'https://carhive.netlify.app',
       images: [
@@ -143,7 +143,7 @@ export const projectDetails = [
   {
       title: "Arab Cuisine",
       description: "This restaurant website delivers a full user experience. With the Context API, users can manage their OrderList seamlessly—add or remove items without duplicates. It features About, Portfolio, Clients, Blog, Contact, and OrderList pages, plus a working contact form.",
-      technogies: ["React.js", "Vite", "React Router"],
+      technogies: ["React.js", "Vite", "SVG Customization"],
       github: 'https://github.com/Hacnine/Restaurant',
       livepreview: 'https://arabcuisineresturant.netlify.app/',
       images: [
