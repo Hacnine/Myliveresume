@@ -1,5 +1,6 @@
 
 import React from "react";
+import { MdOutlineDoubleArrow } from "react-icons/md";
 
 const NextPrevButton = ({ sliderRef }) => {
   const handlePrevious = () => {
@@ -13,16 +14,16 @@ const NextPrevButton = ({ sliderRef }) => {
   return (
     <>
       <button
-        className="slider-arrow bg-white shadow-md shadow-gray-300 hover:bg-red-700 text-black hover:text-white rounded-full px-5 flex items-center justify-center font-extrabold text-2xl "
-        onClick={handlePrevious}
-      >
-       &#8592;
-      </button>
+  className="slider-arrow bg-yellow-500 text-white py-1 -md shadow-gray-300 hover:text-white rounded-full px-5 flex items-center justify-center font-extrabold text-2xl "
+  onClick={handlePrevious}
+>
+  <MdOutlineDoubleArrow className="mirror-arrow" />
+</button>
       <button
-        className="slider-arrow bg-white shadow-md shadow-gray-300 hover:bg-red-700 text-customred hover:text-white rounded-full px-5 flex items-center justify-center font-extrabold text-2xl "
-        onClick={handleNext}
+        className="slider-arrow bg-yellow-500 shadow-md -gray-300  text-customred hover:text-white rounded-full px-5 py-1 flex items-center justify-center font-extrabold text-2xl "
+        onClick={handleNext} 
       >
-        &#8594;
+       <MdOutlineDoubleArrow/>
       </button>
     </>
   );

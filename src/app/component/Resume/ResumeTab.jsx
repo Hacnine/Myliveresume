@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { forwardRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { profileInfo, skills } from '../../constant/index';
 
@@ -10,7 +10,7 @@ const tabs = [
     { id: 4, label: 'About Me' },
 ];
 
-const ResumeTab = () => {
+const ResumeTab = forwardRef((props, ref) => {
     const [activeTab, setActiveTab] = useState(1);
 
     const renderContent = () => {
@@ -49,7 +49,7 @@ const ResumeTab = () => {
                             <p className=' text-gray-100 mt-1 font-semibold'>SSC in Science</p>
                             <li className=' text-gray-400 text-sm mt-2'>Shandhani School and College</li>
                         </div>
-                        
+
                         <div className=" bg-[#283240] w-fit p-4 rounded">
                             <p className=' text-yellow-500 text-sm font-semibold'>2012 - 2014</p>
                             <p className=' text-gray-100 mt-1 font-semibold'>HSC in Science</p>
@@ -86,13 +86,13 @@ const ResumeTab = () => {
                     <div>
                         <h3 className="text-xl md:text-2xl font-semibold mb-4 text-white">About Me</h3>
                         <p className="text-gray-400 text-sm md:text-base mb-4">
-                             I enjoy learning new technologies and constantly improving my skills.I am a frontend developer with six months of internship experience at Datasoft. I have expertise in modern tools like React, Tailwind CSS, Bootstrap, and MUI. I am eager to work on creative projects and thrive in collaborative environments.
+                            I enjoy learning new technologies and constantly improving my skills.I am a frontend developer with six months of internship experience at Datasoft. I have expertise in modern tools like React, Tailwind CSS, Bootstrap, and MUI. I am eager to work on creative projects and thrive in collaborative environments.
                         </p>
                         <div className="grid grid-cols-2">
-                            {profileInfo.map(({title, info}, index) =>
-                            <div className='space-x-2 my-5'>
-                                <span className=' text-gray-300 font-semibold tracking-wider font-roboto'>{title}: </span> <span className=' text-white text-sm'>{info}</span>
-                            </div>
+                            {profileInfo.map(({ title, info }, index) =>
+                                <div className='space-x-2 my-5'>
+                                    <span className=' text-gray-300 font-semibold tracking-wider font-roboto'>{title}: </span> <span className=' text-white text-sm'>{info}</span>
+                                </div>
                             )}
 
                         </div>
@@ -104,15 +104,15 @@ const ResumeTab = () => {
     };
 
     return (
-        <div className="min-h-fit flex flex-wrap items-center flex-col justify-center  bg-gray-800 py-16 px-4">
- <div className="text-center mb-12">
-        <h2 className="text-3xl font-semibold mb-4 text-white">Who I Am and What I Bring</h2>
-        <p className="text-gray-400 max-w-xl mx-auto">
-        Discover my journey, skills, education, and the experiences that have shaped me as a passionate frontend developer dedicated to delivering impactful web solutions.
-        </p>
-      </div>
+        <div className="min-h-fit flex flex-wrap items-center flex-col justify-center  bg-gray-800 py-16 px-4" ref={ref}>
+            <div className="text-center mb-12">
+                <h2 className="text-3xl font-semibold mb-4 text-white">My Resume</h2>
+                <p className="text-gray-400 max-w-xl mx-auto">
+                    Discover my journey, skills, education, and the experiences that have shaped me as a passionate frontend developer dedicated to delivering impactful web solutions.
+                </p>
+            </div>
             <div className=" p-6 rounded-md sm:min-h-[408px]   md:max-h-[408px] container mx-auto  flex flex-col sm:flex-row ">
-                
+
                 <div className="w-full sm:w-1/3 pr-0 sm:pr-8 border-b sm:border-b-0 sm:border-r border-gray-700">
                     <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white font-roboto">Why hire me?</h2>
                     <p className="text-gray-400 mb-6 text-sm md:text-sm font-roboto">With expertise in modern frontend technologies like React, Tailwind CSS, and Bootstrap, I bring creativity, responsiveness, and a passion for building user-friendly web solutions.</p>
@@ -147,6 +147,6 @@ const ResumeTab = () => {
             </div>
         </div>
     );
-};
+});
 
 export default ResumeTab;

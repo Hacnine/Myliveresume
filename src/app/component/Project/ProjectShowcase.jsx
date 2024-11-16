@@ -1,14 +1,15 @@
 
-import React, { useState } from 'react';
+import React, { forwardRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { projects } from '../../constant/index';
 import PortfolioModal from './ProjectShowcaseModal';
 
-const Portfolio = () => {
+const ProjectShowcase = forwardRef((props, ref) => {
   const [selectedTab, setSelectedTab] = useState('FRONTEND PROJECTS');
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [project, setProject] = useState();
 
-  const openModal = () => setIsModalOpen(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+ 
   const closeModal = () => { setIsModalOpen(false); };
 
   // Filter projects based on the selected tab
@@ -18,9 +19,9 @@ const Portfolio = () => {
       : projects.filter((project) => project.category === selectedTab);
 
   return (
-    <div className="bg-slate-900 wrapper text-white py-16">
+    <div className="bg-slate-900 wrapper text-white py-16" ref={ref}> 
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-semibold mb-4">Best Of My Projects</h2>
+        <h2 className="text-3xl font-semibold mb-4">Best Of My Works</h2>
         <p className="text-gray-400 max-w-xl mx-auto mb-12">
         Explore a curated selection of my finest work, showcasing my expertise and creativity in frontend development. Each project reflects my commitment to quality and innovation.
         </p>
@@ -49,7 +50,7 @@ const Portfolio = () => {
                     exit={{ opacity: 0, y: 50 }}
                     transition={{ duration: 0.5 }}
                     className="relative bg-gray-800 cursor-pointer transition-all duration-500 hover:scale-105"
-                    onClick={openModal}
+                    onClick={(project) => {setIsModalOpen(true); setProject(item)}}
                   >
                     {/* Use Next.js Image component for optimized images */}
                     <img src={item.image} alt={item.title} className="md:w-[290px] md:h-[200px] w-full" />
@@ -71,9 +72,9 @@ const Portfolio = () => {
           </AnimatePresence>
         </div>
       </div>
-      <PortfolioModal isModalOpen={isModalOpen} closeModal={closeModal} />
+      <PortfolioModal isModalOpen={isModalOpen} closeModal={closeModal} project={project}/>
     </div>
   );
-};
+});
 
-export default Portfolio;
+export default ProjectShowcase;

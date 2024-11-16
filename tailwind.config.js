@@ -25,7 +25,7 @@ module.exports = {
       },
       colors: {
         
-        "customgray": "#252526",
+        "slate-200": "#252933",
         "yellow-500": "#5f8bd6",
         "gray-800":"#1e2026",
         "slate-900":"#1a1d26"

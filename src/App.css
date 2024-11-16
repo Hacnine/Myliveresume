@@ -11,8 +11,11 @@
 
 
   
-h1, h2, h3, h4, h5, h6,p {
+h1, h2, h3, h4, h5, h6{
   @apply font-roboto
+}
+p{
+  @apply font-helvetica
 }
 /* xl:max-w-xl 2xl:max-w-2xl lg:max-w-lg  */
 .wrapper {
@@ -30,7 +33,7 @@ h1, h2, h3, h4, h5, h6,p {
 
 /* Base class for shared styles */
 .input-base {
-@apply w-full transition-all duration-1000 p-2 border border-gray-300 placeholder:pt-1.5 placeholder:text-xs font-medium placeholder:text-gray-300 resize-none focus:border-customgray focus:outline-none;
+@apply w-full transition-all duration-1000 p-2 border border-gray-300 placeholder:pt-1.5 placeholder:text-xs font-medium placeholder:text-gray-300 resize-none focus:border-slate-500 focus:outline-none;
 }
 
 /* Extending .input from .input-base and adding unique properties */

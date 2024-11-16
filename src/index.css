@@ -32,4 +32,7 @@
     border-radius: 20px;
     
   }
+  .mirror-arrow {
+    transform: scaleX(-1); /* Mirrors the arrow horizontally */
+  }
   

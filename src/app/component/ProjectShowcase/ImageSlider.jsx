@@ -5,13 +5,8 @@ import Slider from 'react-slick';
 import NextPrevButton from "./NextPrevButton";
 import { motion } from 'framer-motion';
 
-const images = [
-    '/images/projects/jahez/img1.png',
-    '/images/projects/jahez/img2.png',
-    '/images/projects/jahez/img3.png',
-    '/images/projects/jahez/img4.png',
-]
-const ImageSlider = () => {
+const ImageSlider = ({images}) => {
+    console.log(images)
     const sliderRef = useRef(null);
 
     const settings = {
