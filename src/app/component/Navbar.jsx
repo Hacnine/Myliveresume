@@ -14,7 +14,7 @@ export default function Navbar({ refs }) {
   const menuItems = ["Home", "Resume", "Projects",  "Contact"];
 
   return (
-    <header className="bg-slate-900 container mx-auto flex justify-end space-x-8 p-6 text-gray-300 text-sm font-roboto font-bold fixed top-0">
+    <header className="bg-slate-900 container mx-auto flex justify-end space-x-8 p-6 text-gray-300 text-sm font-roboto font-bold fixed top-0 z-50">
       {menuItems.map((item, index) => (
         <div key={index} className="relative group">
           <button
