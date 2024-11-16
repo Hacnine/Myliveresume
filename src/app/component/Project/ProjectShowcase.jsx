@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { projects } from '../../constant/index';
-import PortfolioModal from './PortfolioModal';
+import PortfolioModal from './ProjectShowcaseModal';
 
 const Portfolio = () => {
   const [selectedTab, setSelectedTab] = useState('FRONTEND PROJECTS');
@@ -18,11 +18,11 @@ const Portfolio = () => {
       : projects.filter((project) => project.category === selectedTab);
 
   return (
-    <div className="bg-gray-800 wrapper text-white py-16">
+    <div className="bg-slate-900 wrapper text-white py-16">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-semibold mb-4">My Masterpiece Collection</h2>
+        <h2 className="text-3xl font-semibold mb-4">Best Of My Projects</h2>
         <p className="text-gray-400 max-w-xl mx-auto mb-12">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+        Explore a curated selection of my finest work, showcasing my expertise and creativity in frontend development. Each project reflects my commitment to quality and innovation.
         </p>
         <div className="flex justify-center font-roboto font-semibold text-sm mb-8">
           {['FRONTEND PROJECTS', 'VECTOR ARTIST', 'ALL'].map((tab) => (

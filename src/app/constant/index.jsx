@@ -9,6 +9,7 @@ import { FaSkype } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BsGithub } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
+import { SlVector } from "react-icons/sl";
 
 import React from 'react';
 import { LiaReact } from 'react-icons/lia';
@@ -29,18 +30,29 @@ export const contactMethods = [
 ];
 
 export const stats = [
-  { value: 2, label: 'Years of Experience' },
-  { value: 55, label: 'Satisfied Customers' },
-  { value: 211, label: 'Design Items' },
-  { value: 34, label: 'Clients Served' },
+  { value: 6, label: 'Months of Experience' },
+  { value: 2, label: 'Year of Experience' },
+
 ];
 
 export const services = [
-  { title: 'UI/UX Design', projects: 129, Icon: <LuPenTool /> },
-  { title: 'Web Development', projects: 221, Icon: <LuCode2 /> },
-  { title: 'Web Research', projects: 450, Icon: <IoSearchOutline /> },
-  { title: 'Marketing', projects: 331, Icon: <LuBarChart /> },
+  { title: 'Web Development', projects: 10, Icon: <LuCode2 /> },
+  { title: 'Vector Design', projects: 29, Icon: <SlVector /> },
+
+
 ];
+
+export const profileInfo = [
+  {title: 'Name', info: 'Md. Hasnain Tushar'},
+  {title: 'Experience', info: 'Almost six months'},
+  {title: 'Address', info: 'Kallyanpur, Dhaka'},
+  {title: 'Nationality', info: 'Bangladeshi'},
+  {title: 'Languages', info: 'Bangla, English'},
+  {title: 'Phone', info: '+8801403041607'},
+  {title: 'Email', info: 'hacninetusar@gmail.com'},
+
+  
+]
 
 
 
