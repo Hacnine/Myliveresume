@@ -39,7 +39,7 @@ const ProjectShowcase = ({ closeModal, title }) => {
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
-                className="bg-[#1f2a38] relative px-6 rounded-md container mx-auto shadow-lg    flex md:flex-row flex-col gap-3 items-center justify-center md:w-fit md:h-fit sc-456:w-[440px] sc-456:h-[540px]  overflow-y-scroll z-30 scrollable-container md:pt-4 pt-56"
+                className="bg-[#1f2a38] relative p-6 rounded-md container mx-auto shadow-lg    flex md:flex-row flex-col gap-3 items-center justify-center md:w-fit md:h-fit sc-456:w-[440px] sc-456:h-[540px]  overflow-y-scroll z-30 scrollable-container md:pt-4 "
             >
                 {/* <p>Current screen width: {width}px</p> */}
 
@@ -51,7 +51,7 @@ const ProjectShowcase = ({ closeModal, title }) => {
                     <ImageSlider images={project.images} />
                 </div>
 
-                <button className=" absolute top-2 left-2 text-lg" onClick={closeModal}><RxCross2/></button>
+                <button className=" absolute sm:top-2 sc-456:top-4 top-10 left-2 text-lg" onClick={closeModal}><RxCross2/></button>
 
             </motion.div>
         </div>

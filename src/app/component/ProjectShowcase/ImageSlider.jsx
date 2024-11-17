@@ -34,7 +34,7 @@ const ImageSlider = ({images}) => {
                     </motion.div>
                 ))}
             </Slider>
-            <div className="flex items-center md:mt-3 mt-6 justify-center gap-4 ">
+            <div className="flex items-center mt-3 justify-center gap-4 ">
                 <NextPrevButton sliderRef={sliderRef} />
             </div>
         </>
