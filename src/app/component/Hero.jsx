@@ -61,7 +61,7 @@ const Hero = forwardRef(({ scrollToRef }, ref) => {
 
       <img src="/images/profile.svg" className="w-[500px]" alt="Profile Illustration" />
 
-      {/* Right Section */}
+   
       
       <motion.div
         initial={{ opacity: 0, x: -100 }}
@@ -104,9 +104,14 @@ const Hero = forwardRef(({ scrollToRef }, ref) => {
         </a>
       </motion.div>
 
+   {/* Right Section */}
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        // initial={{ opacity: 0, y: 50 }}
+        // animate={{ opacity: 1, y: 0 }}
+        // transition={{ duration: 1 }}
+
+        initial={{ opacity: 0, x: +100 }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         className="text-left mt-8 md:mt-0 md:w-1/2 flex flex-col items-start"
       >
