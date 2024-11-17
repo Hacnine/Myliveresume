@@ -20,8 +20,9 @@ const Hero = forwardRef(({ scrollToRef }, ref) => {
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
-        className="md:flex hidden flex-col items-start space-y-4 md:w-1/2"
+        className="md:flex hidden flex-col items-end space-y-4 md:w-1/2"
       >
+        <div className="md:flex hidden flex-col items-start space-y-4">
         <h1 className="text-[55px] font-bold font-poppins leading-tight">
           Hasnain
           <span className="block -mt-3">
@@ -55,11 +56,13 @@ const Hero = forwardRef(({ scrollToRef }, ref) => {
         >
           Download My CV <FaDownload className="text-lg" />
         </a>
+        </div>
       </motion.div>
 
       <img src="/images/profile.svg" className="w-[500px]" alt="Profile Illustration" />
 
       {/* Right Section */}
+      
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
