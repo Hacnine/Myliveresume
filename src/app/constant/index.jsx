@@ -75,7 +75,7 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    category: 'VECTOR ARTIST',
+    category: 'VECTOR ARTS',
     projects: [
       { title: "Believe In My Ideas.", category: 'VECTOR ARTIST', image: 'images/vector/Believe.png' },
       { title: "Elephant In The Dust", category: 'VECTOR ARTIST', image: 'images/vector/Elephant.png' },

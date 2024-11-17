@@ -104,7 +104,7 @@ const ResumeTab = forwardRef((props, ref) => {
 
                 <div className=' gap-4  min-w-full'>
                      <h3 className="text-xl md:text-2xl font-semibold mb-4 text-white">My Certifications</h3>
-                    <p className="text-gray-400 mb-4">I participated in a comprehensive Java Training Course at LEADS Corporation Limited, a reputed institution known for its focus on software development skills. During this course, I gained an in-depth understanding of Java programming, including core concepts like object-oriented programming, data structures, and algorithm development.In addition to Java, the course provided hands-on exposure to C and C++, allowing I to build a strong foundation in structured and procedural programming. I developed practical coding skills, worked on solving real-world problems, and learned to design efficient, reliable software solutions. This training laid a solid groundwork for his future career in software development.
+                    <p className="text-gray-400 mb-4">I participated in a comprehensive Java Training Course at LEADS Corporation Limited, a reputed institution known for its focus on software development skills. During this course, I gained an in-depth understanding of Java programming, including core concepts like object-oriented programming.In addition to Java, the course provided hands-on exposure to C and C++, allowing I to build a strong foundation in structured and procedural programming. I developed practical coding skills, worked on solving real-world problems, and learned to design efficient, reliable software solutions. This training laid a solid groundwork for his future career in software development.
                         
                     </p>
 

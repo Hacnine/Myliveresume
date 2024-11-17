@@ -29,9 +29,10 @@ export default function App() {
         <Hero ref={homeRef} scrollToRef={resumeRef}/>
         </div>
       <ResumeTab ref={resumeRef}/>
+      <ServicesSection />
+
       <ProjectShowcase ref={projectsRef}/>
       {/* <ProjectShowcase/> */}
-      <ServicesSection />
       <ContactMe ref={contactRef}/>
     </div>
   );

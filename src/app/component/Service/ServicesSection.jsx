@@ -4,7 +4,7 @@ import { services, stats } from '../../constant';
 import ServiceCard from './ServiceCard';
 
 const ServicesSection = () => (
-  <div className=" bg-gray-800 wrapper text-white py-16 ">
+  <div className=" bg-slate-900 wrapper text-white py-16 ">
     <div className="container mx-auto between flex-col px-4 ">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-semibold mb-4">What Do I Love To Do</h2>
