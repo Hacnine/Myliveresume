@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import ProjectShowcase from '../ProjectShowcase/ProjectShowcase';
-
+import { RxCross2 } from "react-icons/rx";
 const PortfolioModal = ({ isModalOpen, closeModal, project }) => {
 
   const [show, setShow] = useState(true);
   return (
     <>
       {isModalOpen && (
-        <div className="fixed inset-0  bg-[#1a1d26] flex items-center justify-center ">
+        <div className="fixed inset-0 z-50 bg-[#1a1d26] flex items-center justify-center ">
           
             
           {project.category === "VECTOR ARTIST" ? <div className="relative">
             <button className=" absolute top-3 left-3 z-50" onClick={closeModal}>
-            <img src="/icon/close.svg" className="size-12" alt="" />
+            <RxCross2 />
             </button>
             <img src={project.image} alt={project.title} />
           </div>

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Description from "./Description";
 import ImageSlider from "./ImageSlider";
 import { projectDetails } from "../../constant";
+import { RxCross2 } from "react-icons/rx";
 
 
 const ProjectShowcase = ({ closeModal, title }) => {
@@ -38,7 +39,7 @@ const ProjectShowcase = ({ closeModal, title }) => {
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
-                className="bg-[#1f2a38] relative p-8 rounded-md container mx-auto shadow-lg    flex md:flex-row flex-col gap-3 items-center justify-center md:w-fit md:h-fit sc-456:w-[440px] sc-456:h-[640px] sc-456:overflow-y-clip overflow-y-scroll z-50"
+                className="bg-[#1f2a38] relative px-6 rounded-md container mx-auto shadow-lg    flex md:flex-row flex-col gap-3 items-center justify-center md:w-fit md:h-fit sc-456:w-[440px] sc-456:h-[540px]  overflow-y-scroll z-30 scrollable-container md:pt-4 pt-56"
             >
                 {/* <p>Current screen width: {width}px</p> */}
 
@@ -50,7 +51,7 @@ const ProjectShowcase = ({ closeModal, title }) => {
                     <ImageSlider images={project.images} />
                 </div>
 
-                <button className=" absolute top-0 left-0" onClick={closeModal}><img src="/icon/close.svg" className="size-12" alt="" /></button>
+                <button className=" absolute top-2 left-2 text-lg" onClick={closeModal}><RxCross2/></button>
 
             </motion.div>
         </div>

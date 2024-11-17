@@ -11,11 +11,14 @@ const Description = ({ project }) => {
         <div className="md:w-1/2 md:h-fit h-full w-full p-4 text-white">
             <h2 className="text-2xl font-bold mb-4">{project.title}</h2>
             <p className="mb-4 text-sm tracking-wider">{project.description}</p>
-            <div className=" text-yellow-500 border-b-2 pb-8 border-slate-100/40">
+            <div className="text-yellow-500 border-b-2 pb-8 w-full border-slate-100/40  flex flex-wrap  gap-2">
                 {project.technogies.map((property) => (
-                    <span className=' border-2 border-yellow-500 px-2 py-0.5 mx-1 rounded-full text-sm font-semibold'>{property}</span>
+                    <span className="border-2 border-yellow-500 px-2 py-0.5 rounded-full text-sm font-semibold">
+                        {property}
+                    </span>
                 ))}
             </div>
+
 
             <div className="mt-4 flex items-center font-semibold text-yellow-500 font-sm">
                 <div className="flex items-center relative group ">

@@ -130,7 +130,7 @@ export const projectDetails = [
   {
       title: "Car Hive",
       description: "It is a responsive frontend car rental project with a pixel-perfect design. Users can browse cars, view detailed features and rental prices, and manage their rental list by adding or removing cars. Visit the live preview link for more details.",
-      technogies: ["React.js", "Vite", "React Router", "React Slick"],
+      technogies: ["React.js",  "React Router", "React Slick","Vite"],
       github: ' https://github.com/Hacnine/CarHive',
       livepreview: 'https://carhive.netlify.app',
       images: [
