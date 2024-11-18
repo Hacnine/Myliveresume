@@ -1,7 +1,11 @@
 
 import React, { forwardRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { profileInfo, skills } from '../../constant/index';
+import MyExperience from './MyExperience';
+import Education from './Education';
+import Skills from './Skills';
+import AboutMe from './AboutMe';
+import Certification from './Certification';
 
 const tabs = [
     { id: 1, label: 'Experience' },
@@ -18,105 +22,16 @@ const ResumeTab = forwardRef((props, ref) => {
     const renderContent = () => {
         switch (activeTab) {
             case 1:
-                return (
-                    <div>
-                        <h3 className="text-xl md:text-2xl font-semibold mb-4 text-white">My Experience</h3>
-                        <div className="mb-4">
-                            <p className="mb-2 text-gray-400 text-sm md:text-base font-semibold">
-                                <strong className=' text-yellow-500 text-lg'>Datasoft</strong> - Intern Frontend Developer</p>
-                            <span className="mb-4 text-sm font-semibold text-blue-200">May 2024 - October 2024
-                            </span>
-                        </div>
-                        <p className="mb-4 text-gray-400 text-sm md:text-base ">During my internship at DataSoft, I developed two remittance management systems and analytics using React, Tailwind CSS, Bootstrap, and MUI as part of a five-person team. Additionally, I transformed an outdated Django application by rebuilding its frontend with React. I redesigned the application to reduce code duplication, enhance readability, and improve overall structure.
-                        </p>
-                        <ul className="list-disc pl-5 space-y-2 text-gray-400 text-sm md:text-base">
-                            <li>Developed two remittance management systems and analytics using React, Tailwind CSS, Bootstrap, and MUI.
-
-                            </li>
-                            <li>Transformed an outdated Django application by rebuilding its frontend with React.
-                            </li>
-                            <li>Redesigned the application to reduce code duplication, enhance readability, and improve overall structure.
-                            </li>
-                        </ul>
-
-
-                    </div>
-                );
+                return (<MyExperience />);
             case 2:
-                return (
-
-                    <div className=' gap-4 center  flex-col md:flex-row min-w-full'>
-                        <div className=" bg-[#283240] w-fit p-4 rounded">
-                            <p className=' text-yellow-500 text-sm font-semibold'>2010 - 2011</p>
-                            <p className=' text-gray-100 mt-1 font-semibold'>SSC in Science</p>
-                            <li className=' text-gray-400 text-sm mt-2'>Shandhani School and College</li>
-                        </div>
-
-                        <div className=" bg-[#283240] w-fit p-4 rounded">
-                            <p className=' text-yellow-500 text-sm font-semibold'>2012 - 2014</p>
-                            <p className=' text-gray-100 mt-1 font-semibold'>HSC in Science</p>
-                            <li className=' text-gray-400 text-sm mt-2'>Shandhani School and College</li>
-                        </div>
-
-
-
-                        <div className=" bg-[#283240] w-fit p-4 rounded">
-                            <p className=' text-yellow-500 text-sm font-semibold'>2015 - 2019</p>
-                            <p className=' text-gray-100 mt-1 font-semibold text-sm'>BSc in Computer Science</p>
-                            <li className=' text-gray-400 text-sm mt-2'>Northern University Bangladesh</li>
-                        </div>
-                    </div >
-
-
-                );
+                return (<Education />);
             case 3:
-                return (
-                    <div>
-                        <h3 className="text-2xl font-semibold mb-4 text-white">My Skills</h3>
-                        <p className="text-gray-400 mb-4">Please take a look about my skills.</p>
-                        <div className="grid md:grid-cols-5 grid-cols-2 gap-4 max-h-[250px] scrollable-container overflow-auto ">
-                            {skills.map((skill, index) => (
-                                <div key={index} className="bg-[#374152]/30 px-4 py-8 rounded text-[#5f8bd6] text-center flex flex-col items-center">
-                                    {skill.icon && <div className="text-3xl mb-2">{skill.icon}</div>}
-                                    <div className=" text-sm tracking-wider  text-[#8eb0eb] font-semibold font-roboto">{skill.name}</div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                ); case 4:
-                return (
-                    <div>
-                        <h3 className="text-xl md:text-2xl font-semibold mb-4 text-white">About Me</h3>
-                        <p className="text-gray-400 text-sm md:text-base mb-4">
-                            I enjoy learning new technologies and constantly improving my skills.I am a frontend developer with six months of internship experience at Datasoft. I have expertise in modern tools like React, Tailwind CSS, Bootstrap, and MUI. I am eager to work on creative projects and thrive in collaborative environments.
-                        </p>
-                        <div className="grid grid-cols-2">
-                            {profileInfo.map(({ title, info }, index) =>
-                                <div className='space-x-2 my-5'>
-                                    <span className=' text-gray-300 font-semibold tracking-wider font-roboto'>{title}: </span> <span className=' text-white text-sm'>{info}</span>
-                                </div>
-                            )}
-
-                        </div>
-                    </div>
-                );
-            case 5: return (
-
-                <div className=' gap-4  min-w-full'>
-                     <h3 className="text-xl md:text-2xl font-semibold mb-4 text-white">My Certifications</h3>
-                    <p className="text-gray-400 mb-4">I participated in a comprehensive Java Training Course at LEADS Corporation Limited, a reputed institution known for its focus on software development skills. During this course, I gained an in-depth understanding of Java programming, including core concepts like object-oriented programming.In addition to Java, the course provided hands-on exposure to C and C++, allowing I to build a strong foundation in structured and procedural programming. I developed practical coding skills, worked on solving real-world problems, and learned to design efficient, reliable software solutions. This training laid a solid groundwork for his future career in software development.
-                        
-                    </p>
-
-                    <div className=" bg-[#283240] w-fit p-4 rounded">
-                        <p className=' text-yellow-500 text-sm font-semibold'>2019</p>
-                        <p className=' text-gray-100 mt-1 font-semibold text-sm'>Java Training Course</p>
-                        <li className=' text-gray-400 text-sm mt-2'>LEADS Corporation Limited</li>
-                    </div>
-                </div >
-
-
-            );
+                return (<Skills />);
+            case 4:
+                return (<AboutMe />);
+            case 5: 
+            return (<Certification />);
+            
             default:
                 return null;
         }

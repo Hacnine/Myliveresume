@@ -3,6 +3,8 @@ import { LuCode2 } from "react-icons/lu";
 import { FaSearchengin } from "react-icons/fa";
 import { IoSearchOutline } from "react-icons/io5";
 import { LuBarChart } from "react-icons/lu";
+import { FaJava } from "react-icons/fa";
+
 import { IoCallSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaSkype } from "react-icons/fa";
@@ -59,16 +61,19 @@ export const profileInfo = [
 
 export const skills = [
     { name: 'React', icon: <LiaReact /> },
-    { name: 'Next.js', icon: <SiNextdotjs /> },
     { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
-    { name: 'Framer Motion', icon: <TbBrandFramerMotion /> },
     { name: 'JavaScript', icon: <IoLogoJavascript /> },
-    { name: 'HTML & CSS', icon: <IoLogoHtml5/> },
+    // { name: 'HTML & CSS', icon: <IoLogoHtml5/> },
     { name: 'MUI', icon: <SiMui /> },
+    { name: 'Next.js', icon: <SiNextdotjs /> },
+    { name: 'Framer Motion', icon: <TbBrandFramerMotion /> },
+
     { name: 'Sass', icon: <FaSass /> },
     { name: 'Redux', icon: <SiRedux /> },
     { name: 'Django', icon: <SiDjango /> },
     { name: 'Python', icon: <FaPython /> },
+    // { name: 'Java', icon: <FaJava /> },
+
 ];
 
 

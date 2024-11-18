@@ -60,7 +60,7 @@ const ProjectShowcase = forwardRef((props, ref) => {
                       whileHover={{ opacity: 1 }}
                       className="absolute top-4 left-5 size-[85%] bg-[#2d3038] flex items-center justify-center"
                     >
-                      <div className="text-center text-white">
+                      <div className="text-center text-white font-roboto uppercase text-sm font-semibold">
                         <p>Additional Information</p>
                         {/* Add more details or links here */}
                       </div>
