@@ -23,16 +23,17 @@ const ServiceCard = ({ title, projects, Icon }) => {
                 visible: { opacity: 1, y: 0 },
             }}
             transition={{ duration: 0.5 }}
-            className="bg-gray-500/20 md:w-48 md:py-12 px-5 py-10 center flex-col text-center group"
+            className="bg-gray-500/20 md:w-48 md:py-12 px-5 py-10 center flex-col text-center group text-yellow-500"
         >
-            <div className="text-4xl mb-4 group-hover:text-yellow-500 transition-colors duration-300">
+            <div className="text-4xl mb-4 group-hover:text-blue-500 transition-colors duration-300">
                 {Icon}
             </div>
-            <h3 className="text-lg font-medium mb-2 group-hover:text-yellow-500 transition-colors duration-500">
+            <div className="bg-yellow-500 h-1 group-hover:w-[80%] transition-all duration-700 w-5"></div>
+            <h3 className="md:text-lg text-sm text-nowrap font-medium mb-2 group-hover:text-blue-500 transition-colors duration-500">
                 {title}
             </h3>
-            <p className="text-gray-400 text-sm group-hover:text-yellow-500 transition-colors duration-400">
-                {projects} projects
+            <p className="text-yellow-500 text-sm group-hover:text-yebluellow-500 transition-colors duration-400">
+                {projects}
             </p>
         </motion.div>
     );

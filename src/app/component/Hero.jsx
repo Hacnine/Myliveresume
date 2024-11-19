@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { forwardRef } from 'react';
 import { FaDownload } from "react-icons/fa6";
+import { socialLinks } from '../constant';
 
 const Hero = forwardRef(({ scrollToRef }, ref) => {
 
@@ -23,46 +24,48 @@ const Hero = forwardRef(({ scrollToRef }, ref) => {
         className="md:flex hidden flex-col items-end space-y-4 md:w-1/2"
       >
         <div className="md:flex hidden flex-col items-start space-y-4">
-        <h1 className="text-[55px] font-bold font-poppins leading-tight">
-          Hasnain
-          <span className="block -mt-3">
-            Tushar<span className="text-yellow-500">.</span>
-          </span>
-          <div className="w-6 ml-2.5 bg-yellow-500 h-0.5"></div>
-        </h1>
+          <h1 className="text-[55px] font-bold font-poppins leading-tight">
+            Hasnain
+            <span className="block -mt-3">
+              Tushar<span className="text-yellow-500">.</span>
+            </span>
+            <div className="w-6 ml-2.5 bg-yellow-500 h-0.5"></div>
+          </h1>
 
-        <p className="text-yellow-500 font-roboto">
+          <div className="text-yellow-500 flex  font-roboto">
+            {socialLinks.map((link, index, array) => (
+              <span className=' group center flex-col'>
+              <span key={index}>
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" ml-0.5"
+                >
+                  {link.name}
+                </a>
+                {" "}{index < array.length - 1 && " | "}
+              </span>
+              <div className="w-1 bg-transparent group-hover:bg-yellow-500  h-0.5 transition-all duration-500 group-hover:w-full"></div>
+              </span>
+            ))}
+          </div>
+
           <a
-            href="https://github.com/hacnine"
+            href="https://drive.google.com/file/d/1-s4V3DwRW0c4J2PFn4sBVBIj3O1WuVfn/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline"
+            className="mt-4 px-6 py-3 border-2 border-yellow-500 hover:text-white text-xs font-semibold text-yellow-500 uppercase font-helvetica flex items-center gap-3 hover:bg-yellow-500 transition duration-300 rounded-md"
           >
-            GitHub
-          </a>{" "}
-          |{" "}
-          <a
-            href="https://www.linkedin.com/in/hacnine/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-          >
-            LinkedIn
+            Download My CV <FaDownload className="text-lg" />
           </a>
-        </p>
-        <a
-          href="https://drive.google.com/file/d/1-s4V3DwRW0c4J2PFn4sBVBIj3O1WuVfn/view?usp=sharing"
-          className="mt-4 px-6 py-3 border-2 border-yellow-500 hover:text-white text-xs font-semibold text-yellow-500 uppercase font-helvetica flex items-center gap-3 hover:bg-yellow-500 transition duration-300 rounded-md"
-        >
-          Download My CV <FaDownload className="text-lg" />
-        </a>
         </div>
       </motion.div>
 
       <img src="/images/profile.svg" className="w-[500px]" alt="Profile Illustration" />
 
-   
-      
+
+
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
@@ -77,25 +80,24 @@ const Hero = forwardRef(({ scrollToRef }, ref) => {
           <div className="w-6 ml-2.5 bg-yellow-500 h-0.5"></div>
         </h1>
 
-        <p className="text-yellow-500 font-roboto">
-          <a
-            href="https://github.com/hacnine"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-          >
-            GitHub
-          </a>{" "}
-          |{" "}
-          <a
-            href="https://www.linkedin.com/in/hacnine/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-          >
-            LinkedIn
-          </a>
-        </p>
+        <div className="text-yellow-500 flex font-roboto">
+        {socialLinks.map((link, index, array) => (
+              <span className=' group center flex-col'>
+              <span key={index}>
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" ml-0.5"
+                >
+                  {link.name}
+                </a>
+                {" "}{index < array.length - 1 && " | "}
+              </span>
+              <div className="w-1 bg-transparent group-hover:bg-yellow-500  h-0.5 transition-all duration-500 group-hover:w-[80%]"></div>
+              </span>
+            ))}
+        </div>
         <a
           href="https://drive.google.com/file/d/1-s4V3DwRW0c4J2PFn4sBVBIj3O1WuVfn/view?usp=sharing"
           className="mt-4 px-6 py-3 border-2 border-yellow-500 hover:text-white text-xs font-semibold text-yellow-500 uppercase font-helvetica flex items-center gap-3 hover:bg-yellow-500 transition duration-300 rounded-md w-fit"
@@ -104,7 +106,7 @@ const Hero = forwardRef(({ scrollToRef }, ref) => {
         </a>
       </motion.div>
 
-   {/* Right Section */}
+      {/* Right Section */}
       <motion.div
         // initial={{ opacity: 0, y: 50 }}
         // animate={{ opacity: 1, y: 0 }}
