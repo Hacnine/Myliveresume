@@ -28,7 +28,7 @@ const ServiceCard = ({ title, projects, Icon }) => {
             <div className="text-4xl mb-4 group-hover:text-blue-500 transition-colors duration-300">
                 {Icon}
             </div>
-            <div className="bg-yellow-500 h-1 group-hover:w-[80%] transition-all duration-700 w-5"></div>
+            <div className="bg-yellow-500  -mt-2.5 h-1 group-hover:w-[80%] transition-all duration-700 w-7"></div>
             <h3 className="md:text-lg text-sm text-nowrap font-medium mb-2 group-hover:text-blue-500 transition-colors duration-500">
                 {title}
             </h3>

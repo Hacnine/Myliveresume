@@ -8,6 +8,7 @@ import ResumeTab from "./app/component/Resume/ResumeTab";
 import ServicesSection from "./app/component/Service/ServicesSection";
 import './App.css'
 import './index.css'
+import References from './app/component/References/References';
 
 export default function App() {
   const homeRef = useRef(null);
@@ -32,6 +33,7 @@ export default function App() {
       <ServicesSection />
 
       <ProjectShowcase ref={projectsRef}/>
+      {/* <References/> */}
       {/* <ProjectShowcase/> */}
       <ContactMe ref={contactRef}/>
     </div>

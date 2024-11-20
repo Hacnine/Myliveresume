@@ -38,7 +38,7 @@ const Hero = forwardRef(({ scrollToRef }, ref) => {
               <span key={index}>
                 <a
                   href={link.url}
-                  target="_blank"
+                  target="_parent"
                   rel="noopener noreferrer"
                   className=" ml-0.5"
                 >
@@ -62,7 +62,7 @@ const Hero = forwardRef(({ scrollToRef }, ref) => {
         </div>
       </motion.div>
 
-      <img src="/images/profile.svg" className="w-[500px]" alt="Profile Illustration" />
+      <img src="/images/profile.svg" className="w-[500px] mt-20" alt="Profile Illustration" />
 
 
 

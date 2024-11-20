@@ -5,7 +5,7 @@ import { contactMethods } from '../../constant/index';
 
 const ContactMe = forwardRef((props, ref) => {
     return (
-        <div className="p-8 bg-slate-900 wrapper text-white center flex-col   contianer mx-auto" ref={ref}>
+        <div className="p-8 bg-gray-800 wrapper text-white center flex-col   contianer mx-auto" ref={ref}>
             <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
             <p className="mb-6 text-gray-400">I'm always open to new opportunities and conversations. Feel free to reach out and let's create something amazing together.</p>
             <div className="flex flex-col items-center">
