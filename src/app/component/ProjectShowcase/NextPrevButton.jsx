@@ -20,7 +20,7 @@ const NextPrevButton = ({ sliderRef }) => {
         <MdOutlineDoubleArrow className="mirror-arrow" />
       </button>
       <button
-        className="slider-arrow bg-yellow-500 shadow-md -gray-300  text-customred hover:text-white rounded-full px-5 py-1 flex items-center justify-center font-extrabold text-lg "
+        className="slider-arrow bg-yellow-500 shadow-md -gray-300  text-white hover:text-white rounded-full px-5 py-1 flex items-center justify-center font-extrabold text-lg "
         onClick={handleNext}
       >
         <MdOutlineDoubleArrow />

@@ -12,7 +12,7 @@ const ProjectShowcase = ({ closeModal, title }) => {
     const project = projectDetails.find(
         (project) => project.title === title
     );
-    console.log(project)
+    // console.log(project)
     // const [width, setWidth] = useState(window.innerWidth);
 
     // useEffect(() => {
@@ -51,7 +51,7 @@ const ProjectShowcase = ({ closeModal, title }) => {
                     <ImageSlider images={project.images} />
                 </div>
 
-                <button className=" absolute sm:top-2 sc-456:top-4 top-10 left-2 text-lg" onClick={closeModal}><RxCross2/></button>
+                <button className=" absolute sm:top-2 sc-456:top-4 top-10 left-2 text-lg  rounded-md font-bold bg-red-500 text-white" onClick={closeModal}><RxCross2/></button>
 
             </motion.div>
         </div>
