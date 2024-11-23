@@ -38,9 +38,9 @@ const ResumeTab = forwardRef((props, ref) => {
     };
 
     return (
-        <div className="min-h-fit flex flex-wrap items-center flex-col justify-center  bg-gray-800 py-16 px-4" ref={ref}>
+        <div className="min-h-fit flex flex-wrap items-center flex-col justify-center  bg-gray-800 py-16 px-4" >
             <div className="text-center mb-12">
-                <h2 className="text-3xl font-semibold mb-4 text-white">My Resume</h2>
+                <h2 className="text-3xl font-semibold mb-4 text-white" ref={ref}>My Resume</h2>
                 <p className="text-gray-400 max-w-xl mx-auto">
                     Discover my journey, skills, education, and the experiences that have shaped me as a passionate frontend developer dedicated to delivering impactful web solutions.
                 </p>

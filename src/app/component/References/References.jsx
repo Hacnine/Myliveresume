@@ -1,31 +1,37 @@
 // References.jsx
-import React from 'react';
+import React, { forwardRef } from 'react';
 import ReferenceCard from './ReferenceCard';
 
 const references = [
     {
-        name: 'John Doe',
-        position: 'Software Engineer',
-        company: 'Tech Company',
+        name: 'Monowar Hossain',
+        position: 'DevOps Engineer',
+        company: 'Arogga',
+        linkedin:"https://www.linkedin.com/in/md-monowar-hossain-4247bb122/",
         testimonial: 'This person is incredibly skilled and a pleasure to work with.',
+        img:"/images/testimonal/1657550256676.jfif"
     },
     {
-        name: 'Jane Smith',
+        name: 'Maksudur Rahman',
         position: 'Product Manager',
-        company: 'Innovative Solutions',
+        company: 'DataSoft Systems Bangladesh Limited',
+        linkedin: "https://www.linkedin.com/in/maksudur-rahman-sohel-1532611b/",
         testimonial: 'A fantastic team player and brilliant at problem-solving.',
+        img:"/images/testimonal/1516864609041.jfif"
     },
     {
-        name: 'Jane Smith',
-        position: 'Product Manager',
-        company: 'Innovative Solutions',
+        name: 'Mahidul Moon',
+        position: 'Software Engineer',
+        company: 'DataSoft Systems Bangladesh Limited',
+        linkedin: "https://www.linkedin.com/in/mahidul-moon-281509144/",
         testimonial: 'A fantastic team player and brilliant at problem-solving.',
+        img:"/images/testimonal/1723645170440.jfif"
     },
 ];
 
-const References = () => {
+const References = forwardRef((props, ref) => {
     return (
-        <section className="py-8 px-4 wrapper bg-slate-900">
+        <section className="py-8 px-4 wrapper bg-slate-900" ref={ref}>
 
             <div className="text-center mb-12">
                 <h2 className="text-3xl font-semibold mb-4 text-white">References</h2>
@@ -41,6 +47,6 @@ const References = () => {
             </div>
         </section>
     );
-};
+});
 
 export default References;

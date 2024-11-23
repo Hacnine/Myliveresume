@@ -16,7 +16,7 @@ const ContactMe = forwardRef((props, ref) => {
                             initial={{ opacity: 0, x: -100 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.1 * index }}
-                            className="flex items-center mx-4 my-2 bg-[#282b33]  px-3 py-3 text-yellow-500"
+                            className="flex items-center mx-4 my-2 bg-[#282b33]  px-3 py-3 text-yellow-500 rounded-md"
                         >
                             <span className="mr-2 text-white text-xl ">{method.icon}</span>
                             <span className="font-medium  md:text-base text-xs">{method.type}</span> <span className="ml-1 md:text-base text-xs">{method.value}</span>
@@ -30,7 +30,7 @@ const ContactMe = forwardRef((props, ref) => {
                             initial={{ opacity: 0, x: -100 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.1 * (index + 3) }}
-                            className="flex items-center mx-4 my-2 bg-[#282b33]  px-3 py-3 text-yellow-500"
+                            className="flex items-center mx-4 my-2 bg-[#282b33]  px-3 py-3 text-yellow-500 rounded-md"
                         >
                             <span className="mr-2 text-white text-xl ">{method.icon}</span>
                             <span className="font-medium  md:text-base text-xs">{method.type}</span> <span className="ml-1 md:text-base text-xs">{method.value}</span>

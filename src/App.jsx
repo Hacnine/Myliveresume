@@ -15,17 +15,19 @@ export default function App() {
   const resumeRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
+  const testimonialRef = useRef(null);
 
   const refs = {
     Home: homeRef,
     Resume: resumeRef,
     Projects: projectsRef,
+    Testimonial: testimonialRef,
     Contact: contactRef,
   };
 
   return (
     <div className=" bg-[#252526]  ">
-      <div className="min-h-fit  bg-slate-900 wrapper text-white">
+      <div className="min-h-fit flex flex-col items-center bg-slate-900  text-white">
         <Navbar  refs={refs}/>
         <Hero ref={homeRef} scrollToRef={resumeRef}/>
         </div>
@@ -33,8 +35,7 @@ export default function App() {
       <ServicesSection />
 
       <ProjectShowcase ref={projectsRef}/>
-      {/* <References/> */}
-      {/* <ProjectShowcase/> */}
+      {/* <References ref={testimonialRef}/> */}
       <ContactMe ref={contactRef}/>
     </div>
   );

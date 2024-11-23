@@ -10,8 +10,9 @@ const PortfolioModal = ({ isModalOpen, closeModal, project }) => {
 
   return ReactDOM.createPortal(
     <div className="fixed top-0 left-0 right-0 bottom-0 z-50 bg-black bg-opacity-50 flex justify-center items-center">
-           {project.category === "VECTOR ARTIST" ? <div className="relative">
-            <button className=" absolute top-3 left-3 z-50 rounded-md font-bold bg-red-500 text-white" onClick={closeModal}>
+           {project.category === "VECTOR ARTIST" ? 
+           <div className="relative max-h-[555px]  overflow-hidden">
+            <button className="  absolute top-3 left-3 z-50 rounded-md font-bold bg-red-500 text-white" onClick={closeModal}>
             <RxCross2 />
             </button>
             <img src={project.image} alt={project.title} />

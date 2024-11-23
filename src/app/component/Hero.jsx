@@ -15,7 +15,7 @@ const Hero = forwardRef(({ scrollToRef }, ref) => {
   }
 
   return (
-    <div className="flex flex-col md:mt-0 mt-20 container mx-auto md:flex-row items-center justify-center h-full px-6" ref={ref}>
+    <div className="flex wrapper flex-col md:mt-0 mt-20 container mx-auto md:flex-row items-center justify-center h-full px-6" ref={ref}>
       {/* Left Section */}
       <motion.div
         initial={{ opacity: 0, x: -100 }}
