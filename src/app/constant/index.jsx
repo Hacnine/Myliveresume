@@ -77,10 +77,10 @@ export const skills = [
   { name: 'Framer Motion', icon: <TbBrandFramerMotion /> },
 
   { name: 'Sass', icon: <FaSass /> },
-  { name: 'Redux', icon: <SiRedux /> },
+  // { name: 'Redux', icon: <SiRedux /> },
   { name: 'Django', icon: <SiDjango /> },
   { name: 'Python', icon: <FaPython /> },
-  // { name: 'Java', icon: <FaJava /> },
+  { name: 'Java', icon: <FaJava /> },
 
 ];
 
