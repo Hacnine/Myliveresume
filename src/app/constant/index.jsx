@@ -22,6 +22,7 @@ import { FaSass, FaPython } from 'react-icons/fa';
 import { IoLogoHtml5 } from "react-icons/io";
 import { SiRedux } from "react-icons/si";
 import { MdLinkedCamera } from "react-icons/md";
+import { SiReactquery } from "react-icons/si";
 
 export const socialLinks = [
   { name: "Facebook", url: "https://www.facebook.com/hacninetusar/" },
@@ -71,7 +72,7 @@ export const skills = [
   { name: 'React', icon: <LiaReact /> },
   { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
   { name: 'JavaScript', icon: <IoLogoJavascript /> },
-  // { name: 'HTML & CSS', icon: <IoLogoHtml5/> },
+  { name: 'Tanstack Query', icon: <SiReactquery/> },
   { name: 'MUI', icon: <SiMui /> },
   { name: 'Next.js', icon: <SiNextdotjs /> },
   { name: 'Framer Motion', icon: <TbBrandFramerMotion /> },
@@ -80,7 +81,7 @@ export const skills = [
   // { name: 'Redux', icon: <SiRedux /> },
   { name: 'Django', icon: <SiDjango /> },
   { name: 'Python', icon: <FaPython /> },
-  { name: 'Java', icon: <FaJava /> },
+  // { name: 'Java', icon: <FaJava /> },
 
 ];
 

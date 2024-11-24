@@ -35,7 +35,7 @@ export default function App() {
       <ServicesSection />
 
       <ProjectShowcase ref={projectsRef}/>
-      {/* <References ref={testimonialRef}/> */}
+      <References ref={testimonialRef}/>
       <ContactMe ref={contactRef}/>
     </div>
   );

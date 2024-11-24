@@ -9,7 +9,7 @@ const ReferenceCard = ({ name, linkedin, position, company, testimonial, img }) 
       target="_blank"
       rel="noopener noreferrer">
       <motion.div
-        className="bg-gray-500/20 shadow-lg rounded-lg p-6 mb-6 hover:shadow-2xl transition-shadow duration-300 text-white"
+        className="bg-gray-500/20 min-h-[140px] shadow-lg rounded-lg p-6 mb-6 hover:shadow-2xl transition-shadow duration-300 text-white"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -24,7 +24,7 @@ const ReferenceCard = ({ name, linkedin, position, company, testimonial, img }) 
             <p className="text-gray-400">{position} at {company}</p>
           </div>
         </div>
-        <p className="mt-4 text-gray-200 italic">"{testimonial}"</p>
+        {/* <p className="mt-4 text-gray-200 italic">"{testimonial}"</p> */}
       </motion.div></a>
   );
 };
