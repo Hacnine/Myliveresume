@@ -69,14 +69,13 @@ export const profileInfo = [
 
 
 export const skills = [
-  { name: 'React', icon: <LiaReact /> },
-  { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
   { name: 'JavaScript', icon: <IoLogoJavascript /> },
-  { name: 'Tanstack Query', icon: <SiReactquery/> },
-  { name: 'MUI', icon: <SiMui /> },
+  { name: 'React', icon: <LiaReact /> },
   { name: 'Next.js', icon: <SiNextdotjs /> },
+  { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
+  { name: 'MUI', icon: <SiMui /> },
   { name: 'Framer Motion', icon: <TbBrandFramerMotion /> },
-
+  { name: 'Tanstack Query', icon: <SiReactquery/> },
   { name: 'Sass', icon: <FaSass /> },
   // { name: 'Redux', icon: <SiRedux /> },
   { name: 'Django', icon: <SiDjango /> },

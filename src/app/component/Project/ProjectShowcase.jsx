@@ -1,6 +1,8 @@
 
 import React, { forwardRef, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
 import { projects } from '../../constant/index';
 import PortfolioModal from './ProjectShowcaseModal';
 
@@ -11,6 +13,8 @@ const ProjectShowcase = forwardRef((props, ref) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
  
   const closeModal = () => { setIsModalOpen(false); };
+  const controls = useAnimation();
+  const [ref2, inView] = useInView();
 
   // Filter projects based on the selected tab
   const filteredProjects = 
@@ -18,6 +22,11 @@ const ProjectShowcase = forwardRef((props, ref) => {
       ? projects 
       : projects.filter((project) => project.category === selectedTab);
 
+      React.useEffect(() => {
+        if (inView) {
+            controls.start('visible');
+        }
+    }, [controls, inView]);
   return (
     <div className=" bg-gray-800 wrapper text-white py-16" ref={ref}> 
       <div className="container mx-auto px-4 text-center">
@@ -37,7 +46,15 @@ const ProjectShowcase = forwardRef((props, ref) => {
             </button>
           ))}
         </div>
-        <div className="">
+        <motion.div
+            ref={ref2}
+            initial="hidden"
+            animate={controls}
+            variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.5 }}>
           <AnimatePresence>
             {filteredProjects.map((project, index) => (
               <div key={index} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -70,7 +87,7 @@ const ProjectShowcase = forwardRef((props, ref) => {
               </div>
             ))}
           </AnimatePresence>
-        </div>
+          </motion.div>
       </div>
       <PortfolioModal isModalOpen={isModalOpen} closeModal={closeModal} project={project}/>
     </div>

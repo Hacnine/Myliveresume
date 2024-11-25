@@ -3,7 +3,8 @@ import React from 'react'
 const Education = () => {
   return (
     <div>
-      
+      <h3 className="text-2xl font-semibold mb-4 text-white">My Education</h3>
+      <p className="text-gray-400 mb-4">Please take a look about my educational background.</p>
       <div className=' gap-4 center  flex-col md:flex-row min-w-full'>
                         <div className=" bg-[#283240] w-fit p-4 rounded">
                             <p className=' text-yellow-500 text-sm font-semibold'>2010 - 2011</p>

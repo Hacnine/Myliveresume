@@ -12,7 +12,7 @@ const AboutMe = () => {
             <div className="grid grid-cols-2">
                 {profileInfo.map(({ title, info }, index) =>
                     <div className='space-x-2 my-5'>
-                        <span className=' text-gray-300 font-semibold tracking-wider font-roboto'>{title}: </span> <span className=' text-white text-sm'>{info}</span>
+                        <span className=' text-gray-300 font-semibold tracking-wider text-sm font-roboto pl-2 border-l-[6px] border-yellow-500'>{title}:</span> <span className=' text-white text-sm'>{info}</span>
                     </div>
                 )}
 
