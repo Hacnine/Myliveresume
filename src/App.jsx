@@ -1,14 +1,14 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import ContactMe from "./app/component/ContactMe/ContactMe";
 import Hero from "./app/component/Hero";
 import Navbar from "./app/component/Navbar";
 import ProjectShowcase from "./app/component/Project/ProjectShowcase";
-// import ProjectShowcase from "./app/component/ProjectShowcase/ProjectShowcase";
 import ResumeTab from "./app/component/Resume/ResumeTab";
 import ServicesSection from "./app/component/Service/ServicesSection";
+import References from './app/component/References/References';
+import SkeletonLoader from './app/component/SkeletonLoader';
 import './App.css'
 import './index.css'
-import References from './app/component/References/References';
 
 export default function App() {
   const homeRef = useRef(null);
@@ -16,6 +16,7 @@ export default function App() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
   const testimonialRef = useRef(null);
+  const [loading, setLoading] = useState(true);
 
   const refs = {
     Home: homeRef,
@@ -25,18 +26,28 @@ export default function App() {
     Contact: contactRef,
   };
 
-  return (
-    <div className=" bg-[#252526]  ">
-      <div className="min-h-fit flex flex-col items-center bg-slate-900  text-white">
-        <Navbar  refs={refs}/>
-        <Hero ref={homeRef} scrollToRef={resumeRef}/>
-        </div>
-      <ResumeTab ref={resumeRef}/>
-      <ServicesSection />
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
 
-      <ProjectShowcase ref={projectsRef}/>
-      <References ref={testimonialRef}/>
-      <ContactMe ref={contactRef}/>
+  if (loading) {
+    return <SkeletonLoader />;
+  }
+
+  return (
+    <div className="bg-[#252526]">
+      <div className="min-h-fit flex flex-col items-center bg-slate-900 text-white">
+        <Navbar refs={refs} />
+        <Hero ref={homeRef} scrollToRef={resumeRef} />
+      </div>
+      <ResumeTab ref={resumeRef} />
+      <ServicesSection />
+      <ProjectShowcase ref={projectsRef} />
+      <References ref={testimonialRef} />
+      <ContactMe ref={contactRef} />
     </div>
   );
 }

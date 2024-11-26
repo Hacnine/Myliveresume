@@ -1,28 +1,29 @@
-import { LuPenTool } from "react-icons/lu";
-import { LuCode2 } from "react-icons/lu";
-import { FaSearchengin } from "react-icons/fa";
-import { IoSearchOutline } from "react-icons/io5";
-import { LuBarChart } from "react-icons/lu";
-import { FaJava } from "react-icons/fa";
-
-import { IoCallSharp } from "react-icons/io5";
-import { MdEmail } from "react-icons/md";
-import { FaSkype } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { BsGithub } from "react-icons/bs";
-import { FaLinkedin } from "react-icons/fa";
-import { SlVector } from "react-icons/sl";
-
+import {
+  LuPenTool, LuCode2, LuBarChart
+} from "react-icons/lu";
+import {
+  FaSearchengin, FaJava, FaSkype, FaLinkedin, FaSass, FaPython, FaReact
+} from "react-icons/fa";
+import {
+  IoSearchOutline, IoCallSharp, IoLogoWhatsapp, IoLogoJavascript, IoLogoHtml5
+} from "react-icons/io5";
+import {
+  MdEmail, MdLinkedCamera
+} from "react-icons/md";
+import {
+  BsGithub
+} from "react-icons/bs";
+import {
+  SlVector
+} from "react-icons/sl";
+import {
+  SiNextdotjs, SiTailwindcss, SiMui, SiDjango, SiRedux, SiReactquery
+} from "react-icons/si";
+import {
+  TbBrandFramerMotion
+} from "react-icons/tb";
 import React from 'react';
-import { LiaReact } from 'react-icons/lia';
-import { SiNextdotjs, SiTailwindcss, SiMui, SiDjango } from 'react-icons/si';
-import { TbBrandFramerMotion } from 'react-icons/tb';
-import { IoLogoJavascript } from 'react-icons/io';
-import { FaSass, FaPython } from 'react-icons/fa';
-import { IoLogoHtml5 } from "react-icons/io";
-import { SiRedux } from "react-icons/si";
-import { MdLinkedCamera } from "react-icons/md";
-import { SiReactquery } from "react-icons/si";
+
 
 export const socialLinks = [
   { name: "Facebook", url: "https://www.facebook.com/hacninetusar/" },
@@ -70,12 +71,12 @@ export const profileInfo = [
 
 export const skills = [
   { name: 'JavaScript', icon: <IoLogoJavascript /> },
-  { name: 'React', icon: <LiaReact /> },
+  { name: 'React', icon: <FaReact /> },
   { name: 'Next.js', icon: <SiNextdotjs /> },
   { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
   { name: 'MUI', icon: <SiMui /> },
   { name: 'Framer Motion', icon: <TbBrandFramerMotion /> },
-  { name: 'Tanstack Query', icon: <SiReactquery/> },
+  { name: 'Tanstack Query', icon: <SiReactquery /> },
   { name: 'Sass', icon: <FaSass /> },
   // { name: 'Redux', icon: <SiRedux /> },
   { name: 'Django', icon: <SiDjango /> },
