@@ -38,7 +38,7 @@ export default function App() {
   }
 
   return (
-    <div className="bg-[#252526]">
+    <div className="bg-[#252526] overflow-clip">
       <div className="min-h-fit flex flex-col items-center bg-slate-900 text-white">
         <Navbar refs={refs} />
         <Hero ref={homeRef} scrollToRef={resumeRef} />
