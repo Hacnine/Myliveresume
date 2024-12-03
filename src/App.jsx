@@ -15,14 +15,14 @@ export default function App() {
   const resumeRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
-  const testimonialRef = useRef(null);
+  const referencesRef = useRef(null);
   const [loading, setLoading] = useState(true);
 
   const refs = {
     Home: homeRef,
     Resume: resumeRef,
     Projects: projectsRef,
-    Testimonial: testimonialRef,
+    References: referencesRef,
     Contact: contactRef,
   };
 
@@ -46,7 +46,7 @@ export default function App() {
       <ResumeTab ref={resumeRef} />
       <ServicesSection />
       <ProjectShowcase ref={projectsRef} />
-      <References ref={testimonialRef} />
+      <References ref={referencesRef} />
       <ContactMe ref={contactRef} />
     </div>
   );

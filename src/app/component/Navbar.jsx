@@ -11,10 +11,10 @@ export default function Navbar({ refs }) {
     }
   };
 
-  const menuItems = ["Home", "Resume", "Projects", "Testimonial", "Contact"];
+  const menuItems = ["Home", "Resume", "Projects", "References", "Contact"];
 
   return (
-    <header className=" bg-slate-900 container mx-auto w-full wrapper flex justify-end space-x-8 p-6 text-gray-300 text-sm font-roboto font-bold fixed top-0 z-40">
+    <header className=" bg-slate-900 container mx-auto w-full wrapper flex justify-end space-x-8 p-6 md:overflow-x-clip overflow-x-scroll text-gray-300 text-sm font-roboto font-bold fixed top-0 z-40">
       {menuItems.map((item, index) => (
         <div key={index} className="relative group">
           <button
