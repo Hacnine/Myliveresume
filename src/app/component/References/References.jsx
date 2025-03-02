@@ -36,7 +36,7 @@ const References = forwardRef((props, ref) => {
             <div className="container mx-auto"> <div className="text-center mb-12">
                 <h2 className="text-3xl font-semibold mb-4 text-white">References</h2>
                 <p className="text-gray-400 max-w-xl mx-auto">
-                Find professional references who can attest to my skills, work ethic, and contributions in frontend development.
+                Find professional references who can attest to my skills, work ethic, and contributions in  development.
                 </p>
             </div>
                 <h2 className="text-3xl text-white font-bold text-center mb-6"></h2>

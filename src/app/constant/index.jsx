@@ -2,7 +2,8 @@ import {
   LuPenTool, LuCode2, LuBarChart
 } from "react-icons/lu";
 import {
-  FaSearchengin, FaJava, FaSkype, FaLinkedin, FaSass, FaPython, FaReact
+  FaSearchengin, FaJava, FaSkype, FaLinkedin, FaSass, FaPython, FaReact,
+  FaNodeJs
 } from "react-icons/fa";
 import {
   IoSearchOutline, IoCallSharp, IoLogoWhatsapp, IoLogoJavascript, IoLogoHtml5
@@ -17,7 +18,8 @@ import {
   SlVector
 } from "react-icons/sl";
 import {
-  SiNextdotjs, SiTailwindcss, SiMui, SiDjango, SiRedux, SiReactquery
+  SiNextdotjs, SiTailwindcss, SiMui, SiDjango, SiRedux, SiReactquery,
+  SiMongodb
 } from "react-icons/si";
 import {
   TbBrandFramerMotion
@@ -41,7 +43,7 @@ export const contactMethods = [
 ];
 
 export const stats = [
-  { value: 6, label: 'Months of Experience' },
+  { value: 5, label: 'Months of Experience' },
   { value: 2, label: 'Year of Experience' },
 
 ];
@@ -73,14 +75,16 @@ export const skills = [
   { name: 'JavaScript', icon: <IoLogoJavascript /> },
   { name: 'React', icon: <FaReact /> },
   { name: 'Next.js', icon: <SiNextdotjs /> },
+  { name: 'Node.js', icon: <FaNodeJs/>},
+  { name: 'MongoDB', icon: <SiMongodb/>},
   { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
   { name: 'MUI', icon: <SiMui /> },
   { name: 'Framer Motion', icon: <TbBrandFramerMotion /> },
   { name: 'Tanstack Query', icon: <SiReactquery /> },
   { name: 'Sass', icon: <FaSass /> },
   // { name: 'Redux', icon: <SiRedux /> },
-  { name: 'Django', icon: <SiDjango /> },
-  { name: 'Python', icon: <FaPython /> },
+  // { name: 'Django', icon: <SiDjango /> },
+  // { name: 'Python', icon: <FaPython /> },
   // { name: 'Java', icon: <FaJava /> },
 
 ];
@@ -103,12 +107,12 @@ export const projects = [
   },
   {
     id: 2,
-    category: 'FRONTEND PROJECTS',
+    category: 'PROJECTS',
     projects: [
-      { title: "Jahez Mart", category: 'FRONTEND PROJECTS', image: 'images/projects/project1.png' },
-      { title: "Swift Cart", category: 'FRONTEND PROJECTS', image: 'images/projects/project2.png' },
-      { title: "Car Hive", category: 'FRONTEND PROJECTS', image: 'images/projects/project3.png' },
-      { title: "Arab Cuisine", category: 'FRONTEND PROJECTS', image: 'images/projects/project4.png' }
+      { title: "Jahez Mart", category: 'PROJECTS', image: 'images/projects/project1.png' },
+      { title: "Swift Cart", category: 'PROJECTS', image: 'images/projects/project2.png' },
+      { title: "Car Hive", category: 'PROJECTS', image: 'images/projects/project3.png' },
+      { title: "Arab Cuisine", category: 'PROJECTS', image: 'images/projects/project4.png' }
     ]
   }
 ];

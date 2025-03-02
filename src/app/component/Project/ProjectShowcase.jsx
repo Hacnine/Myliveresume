@@ -7,7 +7,7 @@ import { projects } from '../../constant/index';
 import PortfolioModal from './ProjectShowcaseModal';
 
 const ProjectShowcase = forwardRef((props, ref) => {
-  const [selectedTab, setSelectedTab] = useState('FRONTEND PROJECTS');
+  const [selectedTab, setSelectedTab] = useState('PROJECTS');
   const [project, setProject] = useState();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -32,14 +32,14 @@ const ProjectShowcase = forwardRef((props, ref) => {
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-semibold mb-4">Best Of My Works</h2>
         <p className="text-gray-400 max-w-xl mx-auto mb-12">
-        Explore a curated selection of my finest work, showcasing my expertise and creativity in frontend development. Each project reflects my commitment to quality and innovation.
+        Explore a curated selection of my finest work, showcasing my expertise and creativity in web development. Each project reflects my commitment to quality and innovation.
         </p>
         <div className="flex justify-center font-roboto font-semibold text-sm mb-8">
-          {['FRONTEND PROJECTS', 'VECTOR ARTS', 'ALL'].map((tab) => (
+          {['PROJECTS', 'VECTOR ARTS', 'ALL'].map((tab) => (
             <button
               key={tab}
               className={`px-4 py-2 mx-2 ${selectedTab === tab ? 'bg-yellow-500 text-white border-transparent' : ' text-yellow-500'
-                } border-2 border-yellow-500 border-t-0`}
+                } border-2 border-yellow-500 border-t-0 rounded-md`}
               onClick={() => setSelectedTab(tab)}
             >
               {tab}
