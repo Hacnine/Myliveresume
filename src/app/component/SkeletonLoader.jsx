@@ -3,7 +3,7 @@ import { contactMethods } from '../constant';
 
 const SkeletonLoader = () => {
     return (
-        <div className="min-h-fit hidden md:flex flex-wrap items-center flex-col justify-center bg-slate-900 p-4">
+        <div className="min-h-fit flex flex-wrap items-center flex-col justify-center bg-slate-900 p-4">
             {/* Header Skeleton */}
             <div className="min-h-screen container w-full max-w-[700px] mx-auto animate-pulse bg-slate-900 text-white flex flex-col items-center justify-center">
                 <nav className="w-full flex justify-end p-4 space-x-2 md:space-x-4">
